@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Modern Blue & White Palette */
+    --background: 0 0% 98%;
+    /* #FAFAFA - Soft Textured/Light Concrete */
+    --foreground: 0 0% 30.6%;
+    /* #4E4E4E - Deep Grey */
+
+    --heading: 0 0% 12.2%;
+    /* #1F1F1F - Almost Black */
+    --body: 0 0% 30.6%;
+    /* #4E4E4E */
+
+    --card: 0 0% 100%;
+    /* #FFFFFF */
+    --card-foreground: 0 0% 30.6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12.2%;
+
+    --primary: 227 100% 59%;
+    /* #2F5BFF - Vibrant Blue */
+    --primary-foreground: 0 0% 100%;
+    /* White */
+
+    --secondary: 227 100% 95%;
+    /* #E6ECFF - Weak Blue Glow */
+    --secondary-foreground: 227 100% 59%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 227 100% 59%;
+    /* Same as primary for consistency in this theme */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 227 100% 59%;
+
+    --radius: 0.5rem;
+    /* 8px default */
+
+    --badge: 0 0% 100%;
+
+    /* Soft Shadow: blur 25-35px, opacity 8-12% */
+    --shadow-soft: 227 10% 10%;
+  }
+
+  .dark {
+    /* Dark mode not strictly requested but keeping safe defaults */
+    --background: 0 0% 12%;
+    --foreground: 0 0% 98%;
+    --heading: 0 0% 98%;
+    --body: 0 0% 80%;
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 227 100% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 227 20% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 227 100% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 227 100% 59%;
+    --badge: 0 0% 20%;
+    --shadow-soft: 0 0% 0%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tight text-heading;
+  }
+}
