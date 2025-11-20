@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Badge from "@/components/Badge";
 import {
     ArrowLeft,
     CheckCircle2,
@@ -13,7 +14,8 @@ import {
     Clock,
     Target,
     Users,
-    TrendingUp
+    TrendingUp,
+    Sparkles
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -57,11 +59,11 @@ const Methodology = () => {
     ];
 
     const trainingScenarios = [
-        "hostile or challenging Q&A",
-        "unexpected boardroom tensions",
-        "crisis-driven media moments",
-        "stakeholder resistance",
-        "organizational pivots"
+        "Hostile Q&A",
+        "Boardroom Tensions",
+        "Crisis Media",
+        "Stakeholder Resistance",
+        "Organizational Pivots"
     ];
 
     const whyItWorks = [
@@ -87,19 +89,25 @@ const Methodology = () => {
             {/* Hero Section */}
             <section className="relative pt-12 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-white via-blue-50/30 to-white overflow-hidden">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+
+                {/* Decorative Blobs */}
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 animate-pulse duration-[10000ms]"></div>
+                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-200/20 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+
                 <div className="container relative mx-auto px-4 lg:px-6">
-                    <Button asChild variant="ghost" className="mb-8 -ml-4 text-muted-foreground hover:text-primary transition-colors">
+                    <Button asChild variant="ghost" className="mb-8 -ml-4 text-muted-foreground hover:text-primary transition-colors animate-in fade-in slide-in-from-left-4 duration-700">
                         <Link to="/">
                             <ArrowLeft className="w-4 h-4 mr-2" />
                             Back to Home
                         </Link>
                     </Button>
 
-                    <div className="max-w-4xl">
-                        <div className="inline-block px-3 py-1 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full">
-                            Our Approach
+                    <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
+                            <Sparkles className="w-3 h-3 fill-primary" />
+                            <span>Our Approach</span>
                         </div>
-                        <h1 className="text-5xl lg:text-7xl font-bold text-heading font-heading mb-8 tracking-tight">
+                        <h1 className="text-5xl lg:text-7xl font-bold text-heading font-heading mb-8 tracking-tight leading-[1.1]">
                             Methodology
                         </h1>
                         <h2 className="text-2xl lg:text-4xl font-bold text-primary font-heading mb-8 leading-tight">
@@ -120,29 +128,29 @@ const Methodology = () => {
             </section>
 
             {/* What Makes Our Approach Different */}
-            <section className="py-20 lg:py-32 bg-white">
-                <div className="container mx-auto px-4 lg:px-6">
+            <section className="py-20 lg:py-32 bg-white relative overflow-hidden">
+                <div className="container mx-auto px-4 lg:px-6 relative z-10">
                     <div className="max-w-5xl mx-auto">
-                        <div className="text-center mb-16">
+                        <div className="text-center mb-16 animate-in fade-in zoom-in duration-700 delay-200">
                             <h2 className="text-3xl lg:text-4xl font-bold text-heading font-heading mb-6">
                                 What Makes Our Approach Different
                             </h2>
                             <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-lg lg:text-xl text-body">
-                                <div className="bg-red-50 text-red-800 px-6 py-3 rounded-lg border border-red-100">
+                                <div className="bg-red-50 text-red-800 px-6 py-3 rounded-lg border border-red-100 transform hover:scale-105 transition-transform duration-300">
                                     Most programs teach <span className="font-bold">what to say</span>
                                 </div>
-                                <ArrowLeft className="hidden md:block w-6 h-6 text-muted-foreground rotate-180" />
-                                <ArrowLeft className="md:hidden w-6 h-6 text-muted-foreground -rotate-90" />
-                                <div className="bg-blue-50 text-primary px-6 py-3 rounded-lg border border-blue-100 shadow-sm">
+                                <ArrowLeft className="hidden md:block w-6 h-6 text-muted-foreground rotate-180 animate-pulse" />
+                                <ArrowLeft className="md:hidden w-6 h-6 text-muted-foreground -rotate-90 animate-pulse" />
+                                <div className="bg-blue-50 text-primary px-6 py-3 rounded-lg border border-blue-100 shadow-sm transform hover:scale-105 transition-transform duration-300">
                                     We train <span className="font-bold">how you think</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <div className="relative">
-                                <div className="absolute -inset-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl -z-10 transform rotate-2"></div>
-                                <Card className="p-8 lg:p-10 bg-white border-border shadow-lg">
+                            <div className="relative group">
+                                <div className="absolute -inset-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl -z-10 transform rotate-2 group-hover:rotate-1 transition-transform duration-500"></div>
+                                <Card className="p-8 lg:p-10 bg-white border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
                                     <p className="text-xl font-bold text-heading mb-8">
                                         You become the kind of leader who:
                                     </p>
@@ -154,45 +162,45 @@ const Methodology = () => {
                                             "stays emotionally present but not reactive",
                                             "doesn't perform authority — radiates it"
                                         ].map((item, i) => (
-                                            <li key={i} className="flex items-start gap-4 text-body text-lg group">
-                                                <div className="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                                            <li key={i} className="flex items-start gap-4 text-body text-lg group/item">
+                                                <div className="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover/item:bg-primary group-hover/item:text-white transition-colors duration-300">
                                                     <CheckCircle2 className="w-4 h-4" />
                                                 </div>
-                                                <span className="group-hover:text-heading transition-colors">{item}</span>
+                                                <span className="group-hover/item:text-heading transition-colors">{item}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </Card>
                             </div>
                             <div className="space-y-8 lg:pl-8">
-                                <div className="flex gap-4 items-start">
-                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+                                <div className="flex gap-4 items-start group">
+                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform duration-300">
                                         <Target className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-heading mb-2">Precision Under Fire</h3>
+                                        <h3 className="text-xl font-bold text-heading mb-2 group-hover:text-primary transition-colors">Precision Under Fire</h3>
                                         <p className="text-body leading-relaxed">
                                             When the stakes are high and information is unclear, standard scripts fail. We give you the cognitive tools to navigate ambiguity with precision.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start">
-                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+                                <div className="flex gap-4 items-start group">
+                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform duration-300">
                                         <Users className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-heading mb-2">Commanding Presence</h3>
+                                        <h3 className="text-xl font-bold text-heading mb-2 group-hover:text-primary transition-colors">Commanding Presence</h3>
                                         <p className="text-body leading-relaxed">
                                             True authority isn't about being the loudest. It's about emotional control and strategic modulation that naturally draws others to follow.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start">
-                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+                                <div className="flex gap-4 items-start group">
+                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform duration-300">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-heading mb-2">Sustainable Influence</h3>
+                                        <h3 className="text-xl font-bold text-heading mb-2 group-hover:text-primary transition-colors">Sustainable Influence</h3>
                                         <p className="text-body leading-relaxed">
                                             Move beyond transactional interactions to build deep, lasting trust with stakeholders, teams, and investors.
                                         </p>
@@ -219,10 +227,10 @@ const Methodology = () => {
 
                         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
                             {capabilities.map((capability, index) => (
-                                <Card key={index} className={`p-8 bg-white border-none shadow-sm hover:shadow-xl transition-all duration-300 group ${index === 4 ? 'md:col-span-2 md:max-w-2xl md:mx-auto' : ''}`}>
+                                <Card key={index} className={`p-8 bg-white border-none shadow-sm hover:shadow-xl transition-all duration-500 group ${index === 4 ? 'md:col-span-2 md:max-w-2xl md:mx-auto' : ''}`}>
                                     <div className="flex items-start gap-6">
                                         <div className="flex-shrink-0">
-                                            <div className="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                            <div className="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300 group-hover:rotate-3">
                                                 <capability.icon className="w-7 h-7" />
                                             </div>
                                         </div>
@@ -260,21 +268,23 @@ const Methodology = () => {
                             Real-World Application
                         </h2>
 
-                        <div className="bg-secondary/20 rounded-3xl p-8 lg:p-12 border border-secondary/50">
-                            <div className="text-center mb-10">
-                                <p className="text-xl text-heading font-medium mb-6">
+                        <div className="bg-secondary/20 rounded-3xl p-8 lg:p-12 border border-secondary/50 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+
+                            <div className="text-center mb-10 relative z-10">
+                                <p className="text-xl text-heading font-medium mb-8">
                                     Every session is built around your real scenarios:
                                 </p>
                                 <div className="flex flex-wrap justify-center gap-3">
                                     {trainingScenarios.map((scenario, i) => (
-                                        <span key={i} className="px-4 py-2 bg-white text-primary font-medium rounded-full shadow-sm border border-blue-100">
+                                        <Badge key={i} className="text-base py-2 px-4 hover:scale-105 transition-transform cursor-default">
                                             {scenario}
-                                        </span>
+                                        </Badge>
                                     ))}
                                 </div>
                             </div>
 
-                            <Card className="p-8 bg-white border-none shadow-md text-center max-w-2xl mx-auto">
+                            <Card className="p-8 bg-white border-none shadow-md text-center max-w-2xl mx-auto relative z-10 hover:shadow-lg transition-shadow duration-300">
                                 <p className="text-xl text-body leading-relaxed">
                                     You practice <span className="font-bold text-heading">rapid-response patterns</span> in a confidential environment, then apply them immediately in your current role.
                                 </p>
@@ -285,8 +295,9 @@ const Methodology = () => {
             </section>
 
             {/* Why This Works */}
-            <section className="py-20 lg:py-32 bg-heading text-white">
-                <div className="container mx-auto px-4 lg:px-6">
+            <section className="py-20 lg:py-32 bg-heading text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+                <div className="container mx-auto px-4 lg:px-6 relative z-10">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-3xl lg:text-4xl font-bold mb-16 text-center">
                             Why This Works
@@ -294,7 +305,7 @@ const Methodology = () => {
 
                         <div className="grid md:grid-cols-3 gap-8">
                             {whyItWorks.map((item, i) => (
-                                <div key={i} className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                <div key={i} className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
                                     <div className="mb-6 text-primary-foreground">
                                         <item.icon className="w-10 h-10" />
                                     </div>
@@ -328,7 +339,7 @@ const Methodology = () => {
                             </p>
                         </div>
 
-                        <div className="inline-block p-1 rounded-2xl bg-gradient-to-r from-blue-100 to-indigo-100">
+                        <div className="inline-block p-1 rounded-2xl bg-gradient-to-r from-blue-100 to-indigo-100 mb-16 transform hover:scale-[1.02] transition-transform duration-500">
                             <div className="bg-white rounded-xl px-8 py-6 shadow-sm">
                                 <p className="font-bold text-heading text-lg">
                                     This is not improvisation as performance.<br />
@@ -337,8 +348,8 @@ const Methodology = () => {
                             </div>
                         </div>
 
-                        <div className="mt-16">
-                            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full h-16 px-12 text-xl font-bold shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl">
+                        <div>
+                            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full h-16 px-12 text-xl font-bold shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl animate-pulse hover:animate-none">
                                 <Link to="/">
                                     Start Your Transformation
                                 </Link>
