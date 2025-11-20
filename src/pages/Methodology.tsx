@@ -349,7 +349,7 @@ const Methodology = () => {
                         </div>
 
                         <div>
-                            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full h-16 px-12 text-xl font-bold shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl animate-pulse hover:animate-none">
+                            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full h-16 px-12 text-xl font-bold shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl">
                                 <Link to="/">
                                     Start Your Transformation
                                 </Link>
@@ -363,7 +363,7 @@ const Methodology = () => {
             <footer className="py-12 bg-white border-t border-gray-100">
                 <div className="container mx-auto px-4 lg:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-heading font-bold font-heading text-xl tracking-tight">
-                        EXECUTIVE<span className="text-primary">CLARITY</span>
+                        Никита <span className="text-primary">Меньшов</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
                         © 2025 Executive Clarity. All rights reserved.

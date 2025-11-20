@@ -237,7 +237,7 @@ const Index = () => {
       <footer className="py-8 lg:py-12 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 lg:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-heading font-bold font-heading text-xl">
-            EXECUTIVE<span className="text-primary">CLARITY</span>
+            Никита <span className="text-primary">Меньшов</span>
           </div>
           <p className="text-sm text-muted-foreground text-center md:text-left">
             © 2025 Executive Clarity. All rights reserved.
