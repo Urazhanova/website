@@ -6,6 +6,7 @@ import coachPortrait from "@/assets/coach-portrait.jpg";
 import speakerStage from "@/assets/speaker-stage.jpg";
 import heroSpeaker from "@/assets/hero-speaker.jpg";
 import { ArrowRight, CheckCircle2, Star, Mic, Users, TrendingUp, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -39,8 +40,8 @@ const Index = () => {
                 <Button className="bg-primary text-white hover:bg-primary/90 rounded-lg h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg font-semibold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
                   Book a Consultation
                 </Button>
-                <Button variant="outline" className="bg-white border-primary text-primary hover:bg-primary/5 rounded-lg h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg font-semibold">
-                  View Methodology
+                <Button asChild variant="outline" className="bg-white border-primary text-primary hover:bg-primary/5 rounded-lg h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg font-semibold">
+                  <Link to="/methodology">View Methodology</Link>
                 </Button>
               </div>
             </div>
@@ -188,7 +189,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-center">
-            {[1, 2, 3, 4, 5].map((item) => (
+            {[1, 2, 3].map((item) => (
               <Card key={item} className="overflow-hidden border-none shadow-soft hover:shadow-soft-lg transition-all duration-300 group cursor-pointer">
                 {/* Video Placeholder */}
                 <div className="relative aspect-video bg-gray-100 flex items-center justify-center group-hover:bg-gray-200 transition-colors">
