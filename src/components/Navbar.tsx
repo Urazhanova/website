@@ -81,7 +81,9 @@ const Navbar = () => {
                                             to={link.path}
                                             onClick={() => {
                                                 setIsOpen(false);
-                                                window.scrollTo(0, 0);
+                                                setTimeout(() => {
+                                                    window.scrollTo(0, 0);
+                                                }, 300);
                                             }}
                                             className={cn(
                                                 "text-lg font-medium transition-colors hover:text-primary",
