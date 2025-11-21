@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Badge from "@/components/Badge";
+import ContactModal from "@/components/ContactModal";
 import {
     ArrowLeft,
     CheckCircle2,
@@ -349,11 +350,11 @@ const Methodology = () => {
                         </div>
 
                         <div>
-                            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full h-16 px-12 text-xl font-bold shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl">
-                                <Link to="/">
+                            <ContactModal>
+                                <Button size="lg" className="bg-primary text-white hover:bg-primary/90 rounded-full h-16 px-12 text-xl font-bold shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl">
                                     Start Your Transformation
-                                </Link>
-                            </Button>
+                                </Button>
+                            </ContactModal>
                         </div>
                     </div>
                 </div>
@@ -363,7 +364,7 @@ const Methodology = () => {
             <footer className="py-12 bg-white border-t border-gray-100">
                 <div className="container mx-auto px-4 lg:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-heading font-bold font-heading text-xl tracking-tight">
-                        Никита <span className="text-primary">Меньшов</span>
+                        Nikita <span className="text-primary">Menshov</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
                         © 2025 Executive Clarity. All rights reserved.

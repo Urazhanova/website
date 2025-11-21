@@ -5,7 +5,8 @@ import HandDrawnUnderline from "@/components/HandDrawnUnderline";
 import coachPortrait from "@/assets/coach-portrait.jpg";
 import speakerStage from "@/assets/speaker-stage.jpg";
 import heroSpeaker from "@/assets/hero-speaker.jpg";
-import { ArrowRight, CheckCircle2, Star, Mic, Users, TrendingUp, Play } from "lucide-react";
+import ContactModal from "@/components/ContactModal";
+import { ArrowRight, Play, CheckCircle2, Star, Quote, Mic, Users, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -100,10 +101,9 @@ const Index = () => {
                 <p>
                   My coaching methodology breaks down the complex art of performance into actionable, trainable skills that you can apply immediately.
                 </p>
-                <Button variant="link" className="text-primary font-bold text-base lg:text-lg p-0 h-auto hover:no-underline group">
-                  Learn more about the process
-                  <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link to="/leader" className="text-primary font-bold text-base lg:text-lg p-0 h-auto hover:no-underline group flex items-center">
+                  Who leads this program <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
 
@@ -227,9 +227,13 @@ const Index = () => {
           <p className="text-lg lg:text-xl text-body mb-8 lg:mb-10 max-w-2xl mx-auto">
             Join the ranks of top executives who have transformed their communication style.
           </p>
-          <Button className="bg-primary text-white hover:bg-primary/90 rounded-lg h-14 lg:h-16 px-8 lg:px-12 text-lg lg:text-xl font-bold shadow-xl shadow-primary/20 transition-all hover:-translate-y-1">
-            Start Your Transformation
-          </Button>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <ContactModal>
+              <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all hover:-translate-y-1">
+                Start Your Transformation
+              </Button>
+            </ContactModal>
+          </div>
         </div>
       </section>
 
@@ -237,7 +241,7 @@ const Index = () => {
       <footer className="py-8 lg:py-12 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 lg:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-heading font-bold font-heading text-xl">
-            Никита <span className="text-primary">Меньшов</span>
+            Nikita <span className="text-primary">Menshov</span>
           </div>
           <p className="text-sm text-muted-foreground text-center md:text-left">
             © 2025 Executive Clarity. All rights reserved.
