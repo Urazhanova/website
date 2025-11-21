@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-primary/10 selection:text-primary">
       {/* Hero Section */}
-      <section className="relative pt-12 pb-16 lg:pt-32 lg:pb-32 overflow-hidden">
+      <section className="relative pt-28 pb-16 lg:pt-32 lg:pb-32 overflow-hidden">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             {/* Left Column: Content */}

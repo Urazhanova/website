@@ -90,7 +90,7 @@ const Methodology = () => {
     return (
         <div className="min-h-screen bg-background font-sans selection:bg-primary/10">
             {/* Hero Section */}
-            <section className="relative pt-12 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-white via-blue-50/30 to-white overflow-hidden">
+            <section className="relative pt-28 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-white via-blue-50/30 to-white overflow-hidden">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
                 {/* Decorative Blobs */}

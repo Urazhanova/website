@@ -12,11 +12,7 @@ const Leader = () => {
     return (
         <div className="min-h-screen bg-background font-sans selection:bg-primary/10">
             {/* Navigation */}
-            <nav className="absolute top-0 left-0 right-0 z-50 p-6">
-                <div className="container mx-auto">
 
-                </div>
-            </nav>
 
             {/* Hero Section */}
             <section className="relative h-[80vh] min-h-[600px] flex items-end pb-20 overflow-hidden">
