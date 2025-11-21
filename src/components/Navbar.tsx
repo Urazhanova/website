@@ -38,7 +38,7 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-4 lg:px-6 flex items-center justify-between">
                 <Link to="/" className="text-xl font-bold font-heading text-heading">
-                    Executive Clarity
+                    Nikita Menshov
                 </Link>
 
                 {/* Desktop Navigation */}
