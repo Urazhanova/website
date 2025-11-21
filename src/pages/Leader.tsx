@@ -168,18 +168,18 @@ const Leader = () => {
                 <div className="container mx-auto px-4 lg:px-6 mt-12 grid md:grid-cols-3 gap-8 text-center relative z-10">
                     <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
                         <Globe className="w-8 h-8 text-primary mx-auto mb-4" />
-                        <h3 className="text-lg font-bold mb-2">International Reach</h3>
-                        <p className="text-sm text-gray-400">Russia, Cyprus, SE Asia, Dubai</p>
+                        <h3 className="text-lg font-bold mb-2 text-white">International Reach</h3>
+                        <p className="text-sm text-gray-300">Russia, Cyprus, SE Asia, Dubai</p>
                     </div>
                     <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
                         <Users className="w-8 h-8 text-primary mx-auto mb-4" />
-                        <h3 className="text-lg font-bold mb-2">C-Suite Focus</h3>
-                        <p className="text-sm text-gray-400">Executives facing genuine complexity</p>
+                        <h3 className="text-lg font-bold mb-2 text-white">C-Suite Focus</h3>
+                        <p className="text-sm text-gray-300">Executives facing genuine complexity</p>
                     </div>
                     <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
                         <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
-                        <h3 className="text-lg font-bold mb-2">No Mid-Management</h3>
-                        <p className="text-sm text-gray-400">Exclusive to senior leadership</p>
+                        <h3 className="text-lg font-bold mb-2 text-white">No Mid-Management</h3>
+                        <p className="text-sm text-gray-300">Exclusive to senior leadership</p>
                     </div>
                 </div>
             </section>
