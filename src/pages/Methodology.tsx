@@ -18,7 +18,9 @@ import {
     TrendingUp,
     Sparkles
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import heroSpeaker from "@/assets/hero-speaker.jpg";
+
+
 
 const Methodology = () => {
     const capabilities = [
@@ -96,28 +98,38 @@ const Methodology = () => {
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-200/20 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
 
                 <div className="container relative mx-auto px-4 lg:px-6">
-
-
-                    <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
-                            <Sparkles className="w-3 h-3 fill-primary" />
-                            <span>Our Approach</span>
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
+                                <Sparkles className="w-3 h-3 fill-primary" />
+                                <span>Our Approach</span>
+                            </div>
+                            <h1 className="text-5xl lg:text-7xl font-bold text-heading font-heading mb-8 tracking-tight leading-[1.1]">
+                                Methodology
+                            </h1>
+                            <h2 className="text-2xl lg:text-4xl font-bold text-primary font-heading mb-8 leading-tight">
+                                Executive Communication <br className="hidden lg:block" />
+                                Under Pressure
+                            </h2>
+                            <div className="space-y-6 text-lg lg:text-xl text-body leading-relaxed max-w-3xl border-l-4 border-primary/20 pl-6">
+                                <p>
+                                    We develop not scripted responses, but the mental and emotional capabilities that allow leaders to think and act clearly under pressure, uncertainty, and resistance.
+                                </p>
+                                <p className="font-semibold text-heading">
+                                    This is not performance training.
+                                    <span className="block text-primary mt-1">This is strategic behavior in the moment.</span>
+                                </p>
+                            </div>
                         </div>
-                        <h1 className="text-5xl lg:text-7xl font-bold text-heading font-heading mb-8 tracking-tight leading-[1.1]">
-                            Methodology
-                        </h1>
-                        <h2 className="text-2xl lg:text-4xl font-bold text-primary font-heading mb-8 leading-tight">
-                            Executive Communication <br className="hidden lg:block" />
-                            Under Pressure
-                        </h2>
-                        <div className="space-y-6 text-lg lg:text-xl text-body leading-relaxed max-w-3xl border-l-4 border-primary/20 pl-6">
-                            <p>
-                                We develop not scripted responses, but the mental and emotional capabilities that allow leaders to think and act clearly under pressure, uncertainty, and resistance.
-                            </p>
-                            <p className="font-semibold text-heading">
-                                This is not performance training.
-                                <span className="block text-primary mt-1">This is strategic behavior in the moment.</span>
-                            </p>
+
+                        {/* Hero Image */}
+                        <div className="relative hidden lg:block animate-in fade-in slide-in-from-right-8 duration-1000 delay-200">
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue-200/20 rounded-[2rem] transform rotate-3 scale-105 blur-lg"></div>
+                            <img
+                                src={heroSpeaker}
+                                alt="Executive coaching session"
+                                className="relative w-full h-[600px] object-cover rounded-[2rem] shadow-2xl border border-white/20"
+                            />
                         </div>
                     </div>
                 </div>
