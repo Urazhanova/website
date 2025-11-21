@@ -38,9 +38,11 @@ const Index = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 lg:gap-5 pt-2 lg:pt-4">
-                <Button className="bg-primary text-white hover:bg-primary/90 rounded-lg h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg font-semibold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
-                  Book a Consultation
-                </Button>
+                <ContactModal>
+                  <Button className="bg-primary text-white hover:bg-primary/90 rounded-lg h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg font-semibold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
+                    Book a Consultation
+                  </Button>
+                </ContactModal>
                 <Button asChild variant="outline" className="bg-white border-primary text-primary hover:bg-primary/5 rounded-lg h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg font-semibold">
                   <Link to="/methodology">View Methodology</Link>
                 </Button>
