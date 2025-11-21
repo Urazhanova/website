@@ -9,6 +9,7 @@ import Methodology from "./pages/Methodology";
 import Leader from "./pages/Leader";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
@@ -18,8 +19,10 @@ const App = () => (
       <Toaster />
       <Sonner />
 
+
       <HashRouter>
         <ScrollToTop />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/methodology" element={<Methodology />} />

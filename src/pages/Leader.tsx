@@ -14,12 +14,7 @@ const Leader = () => {
             {/* Navigation */}
             <nav className="absolute top-0 left-0 right-0 z-50 p-6">
                 <div className="container mx-auto">
-                    <Button asChild variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
-                        <Link to="/">
-                            <ArrowLeft className="w-4 h-4 mr-2" />
-                            Back to Home
-                        </Link>
-                    </Button>
+
                 </div>
             </nav>
 

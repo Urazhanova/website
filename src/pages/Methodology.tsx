@@ -96,12 +96,7 @@ const Methodology = () => {
                 <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-200/20 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
 
                 <div className="container relative mx-auto px-4 lg:px-6">
-                    <Button asChild variant="ghost" className="mb-8 -ml-4 text-muted-foreground hover:text-primary transition-colors animate-in fade-in slide-in-from-left-4 duration-700">
-                        <Link to="/">
-                            <ArrowLeft className="w-4 h-4 mr-2" />
-                            Back to Home
-                        </Link>
-                    </Button>
+
 
                     <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
                         <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
