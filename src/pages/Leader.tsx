@@ -144,8 +144,8 @@ const Leader = () => {
                 </div>
 
                 {/* Marquee Container */}
-                <div className="relative flex overflow-x-hidden group py-8">
-                    <div className="animate-marquee whitespace-nowrap flex gap-6">
+                <div className="relative flex overflow-hidden group py-8 bg-heading">
+                    <div className="flex animate-marquee whitespace-nowrap gap-6 pr-6 min-w-full shrink-0">
                         {[1, 2, 3, 4].map((i) => (
                             <div key={i} className="flex gap-6">
                                 <img src={speakerStage} className="h-64 w-96 object-cover rounded-xl opacity-60 hover:opacity-100 transition-opacity duration-300 shadow-lg" />
@@ -154,7 +154,7 @@ const Leader = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="absolute top-8 animate-marquee2 whitespace-nowrap flex gap-6">
+                    <div className="flex animate-marquee whitespace-nowrap gap-6 pr-6 min-w-full shrink-0" aria-hidden="true">
                         {[1, 2, 3, 4].map((i) => (
                             <div key={i} className="flex gap-6">
                                 <img src={speakerStage} className="h-64 w-96 object-cover rounded-xl opacity-60 hover:opacity-100 transition-opacity duration-300 shadow-lg" />
