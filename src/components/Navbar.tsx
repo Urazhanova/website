@@ -79,7 +79,10 @@ const Navbar = () => {
                                         <Link
                                             key={link.path}
                                             to={link.path}
-                                            onClick={() => setIsOpen(false)}
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                window.scrollTo(0, 0);
+                                            }}
                                             className={cn(
                                                 "text-lg font-medium transition-colors hover:text-primary",
                                                 isActive(link.path) ? "text-primary" : "text-body"
