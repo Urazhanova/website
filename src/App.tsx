@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Methodology from "./pages/Methodology";
 import Leader from "./pages/Leader";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -16,7 +17,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/methodology" element={<Methodology />} />
